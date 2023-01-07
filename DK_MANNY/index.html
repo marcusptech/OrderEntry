@@ -1,0 +1,50 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>DK-Manuals</title> 
+        <meta charset="UTF-8">
+        <meta name="ROBOTS" CONTENT="NOODP">
+        <meta name="description" content="{{description}}">
+        <meta name="keywords" content="{{keywords}}">
+        <meta name="viewport" content="width=device-width," inital-scale="1.0h">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="Manual-card">
+                <form method="post" id="Form_ID" onkeypress="return isNumberKey(event)" >
+                    <h1>DK MANUALS</h1>
+                    <input 
+                           id="Input" 
+                           class="search_bar"
+                           type="text"
+                           name="Entry"
+                           minlength="8"
+                           maxlength="8"
+                           title ="ordernumber"
+                           autocomplete="off"
+                           required
+                    />
+                    <!-- <btn id= "search_btn"><img src="images/scope.jpg" id="scope"/></btn> -->
+                </form>
+                <div id="INFOBOX">
+                    <div class="Desc_Box">
+                        <h4 class="title"> DESCRIPTION: </h4>
+                        <div class="Span_box" id="Span_list">
+                            <span id="Entry" class="list"></span>
+                            <span id="Entry" class="list"></span>
+                            <span id="Entry" class="list"></span>
+                            <span id="Entry" class="list"></span>
+                            <span id="Entry" class="list"></span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <script type="text/javascript" src="./app.js" async></script>
+    </body>
+</html>
